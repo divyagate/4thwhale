@@ -1,0 +1,106 @@
+
+$green-background: #ddffe4;
+$green-border: #00d12e;
+$green-color:#00d12e;
+$green-text-color:#005012;
+
+$red-background: #ffd3d3;
+$red-border: #ff1b1b;
+$red-color:#ff1b1b;
+$red-text-color:#930101;
+
+$yellow-background: #fff2c5;
+$yellow-border: #ffcd1b;
+$yellow-color:#ffcd1b;
+$yellow-text-color:#8e7004;
+
+.container {
+width :360px;
+height:306px;
+border:1px solid;
+border-radius: 6px;
+position: relative;
+box-sizing: border-box;
+margin: 50px auto;
+
+    .trafficpole{
+        position: absolute;
+        width: 74px;
+        height: 144px;
+        top: 50px;
+        left: 0;
+        padding: 4px 0;
+        border-radius: 6px;
+        border: 1px solid;
+        right: 0;
+        margin:0 auto;
+
+            .light{
+                position: static;
+                width: 24px;
+                height: 24px;
+                left: 25px;
+                background:#c4c4c4;
+                border-radius:50%;
+                margin: 16px auto;
+            }
+    }
+    .message{
+        position: absolute;
+        top:234px;
+        left:64px;
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35.16px;
+        text-align: center;
+
+        p{
+            margin: 0;
+        }
+    }
+
+    &.container-green{
+        border-color: $green-border;
+        background-color: $green-background;
+           
+        .green{
+            background:$green-color;
+        }
+
+        .green-text-color{
+            color:$green-text-color;
+        }
+        .trafficpole{
+            border-color: $green-text-color;
+        }
+    }
+    &.container-red{
+        border-color: $red-border;
+        background-color: $red-background;
+           
+        .red{
+            background:$red-color;
+        }
+        .red-text-color{
+            color:$red-text-color;
+        }
+        .trafficpole{
+            border-color: $red-text-color;
+        }
+    }
+    &.container-yellow{
+        border-color: $yellow-border;
+        background-color: $yellow-background;
+           
+        .yellow{
+            background:$yellow-color;
+        }
+        .yellow-text-color{
+            color:$yellow-text-color;
+        }
+        .trafficpole{
+            border-color:$yellow-text-color;
+        }
+    }
+}
